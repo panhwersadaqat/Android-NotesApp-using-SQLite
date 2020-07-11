@@ -8,9 +8,12 @@
 
     <EditText
         android:id="@+id/etTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/customshape_forfields"
         android:ems="10"
         android:hint="@string/titlehint"
         android:inputType="textPersonName"
@@ -23,9 +26,12 @@
 
     <EditText
         android:id="@+id/etDes"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/customshape_forfields"
         android:ems="10"
         android:hint="@string/des"
         android:inputType="textMultiLine"
@@ -35,13 +41,17 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="50pt"
-        android:layout_height="30pt"
-        android:layout_marginBottom="88dp"
-        android:layout_marginEnd="60dp"
-        android:background="@drawable/bublue_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/customshape_forfields"
+        android:backgroundTint="@color/colorPrimary"
         android:onClick="buAdd"
         android:text="@string/add"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -91,7 +91,6 @@ class MainActivity : AppCompatActivity(){
         sv.setSearchableInfo(sm.getSearchableInfo(componentName))
         sv.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                Toast.makeText(applicationContext, query, Toast.LENGTH_LONG).show()
                 LoadQuery("%"+ query +"%")
                 return false
             }

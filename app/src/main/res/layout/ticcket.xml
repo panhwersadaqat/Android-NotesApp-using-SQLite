@@ -8,7 +8,6 @@
 
     <LinearLayout
         android:background="@drawable/background_layout"
-
         android:layout_margin="3pt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
